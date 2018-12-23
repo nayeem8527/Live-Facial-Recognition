@@ -1,0 +1,10 @@
+on server
+# python train_classifier.py --input-dir /home/acv_course/acv_project/data/lfw_aligned/ --model-path /home/acv_course/acv_project/Model/20170511-185253.pb --classifier-path /home/acv_course/acv_project/output/classifier_rf_new_data.pkl --num-threads 10 --num-epochs 5 --min-num-images-per-class 1
+
+
+#on system (SVM)
+python train_classifier.py --input-dir /home/lokender/acv_project/acv_project_dt_align/ --model-path /mnt/softwares/acv_project_code/Code/Model/20170511-185253.pb --classifier-path /mnt/softwares/acv_project_code/Code/classfier_path/classifier_svm.pkl --num-threads 10 --num-epochs 5 --min-num-images-per-class 1
+
+#on system (RF)
+python train_classifier.py --input-dir /home/lokender/acv_project/acv_project_dt_align/ --model-path /mnt/softwares/acv_project_code/Code/Model/20170511-185253.pb --classifier-path /mnt/softwares/acv_project_code/Code/classfier_path/classifier_svm.pkl --num-threads 10 --num-epochs 5 --min-num-images-per-class 1
+
