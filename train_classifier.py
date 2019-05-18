@@ -194,7 +194,7 @@ if __name__ == '__main__':
                         help='Path to output trained classifier model')
     parser.add_argument('--split-ratio', type=float, action='store', dest='split_ratio', default=0.7,
                         help='Ratio to split train/test dataset')
-    parser.add_argument('--min-num-images-per-class', type=int, action='store', default=10,
+    parser.add_argument('--min-num-images-per-class', type=int, action='store', default=5,
                         dest='min_images_per_class', help='Minimum number of images per class')
     parser.add_argument('--classifier-path', type=str, action='store', dest='classifier_path',
                         help='Path to output trained classifier model')

@@ -89,16 +89,16 @@ def get_image_paths_and_labels(dataset):
 def get_dataset(input_directory):
     dataset = []
 
-    classes = os.listdir(input_directory)
+    classes = os.listdir(input_directory)    
     classes.sort()
     nrof_classes = len(classes)
-    for i in range(nrof_classes):
+    for i in range(nrof_classes):        
         class_name = classes[i]
         facedir = os.path.join(input_directory, class_name)
         if os.path.isdir(facedir):
             images = os.listdir(facedir)
-            image_paths = [os.path.join(facedir, img) for img in images]
-            image_paths = filter(lambda x: x[-4:] == '.png', image_paths)
+            image_paths = [os.path.join(facedir, img) for img in images]            
+            # image_paths = filter(lambda x: x[-4:] == '.png', image_paths)            
             dataset.append(ImageClass(class_name, image_paths))
 
     return dataset
